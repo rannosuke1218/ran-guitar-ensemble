@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>らんギターアンサンブル | 秋山嵐之輔</title>
+<meta name="description" content="ギターアンサンブル「らんギターアンサンブル」と主宰・秋山嵐之輔の公式サイト。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf8f4; --ink:#1f1d1a; --sub:#6b655c; --line:#d9d2c5; --gold:#a8894a;
+    --dark:#14120f; --dark-ink:#f1ece3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 32px;background:rgba(250,248,244,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .logo{font-family:"Noto Serif JP",serif;font-size:15px;letter-spacing:.2em;text-decoration:none}
+  nav a{font-size:13px;letter-spacing:.12em;text-decoration:none;color:var(--sub);margin-left:28px}
+  nav a:hover{color:var(--ink)}
+
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;padding-top:64px}
+  .hero-img{background:url(img/classical.jpg) center 30%/cover no-repeat}
+  .hero-text{display:flex;flex-direction:column;justify-content:center;padding:64px 8vw}
+  .en{font-family:"Cormorant Garamond",serif;letter-spacing:.3em;color:var(--gold);font-size:14px;text-transform:uppercase}
+  .hero h1{font-family:"Noto Serif JP",serif;font-weight:600;font-size:clamp(28px,3.4vw,46px);letter-spacing:.14em;line-height:1.4;margin:18px 0 6px}
+  .hero .roman{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.18em;color:var(--sub)}
+  .hero .rule{width:48px;height:1px;background:var(--gold);margin:36px 0}
+  .hero p.lead{color:var(--sub);font-size:15px}
+
+  section{padding:120px 8vw}
+  .head{margin-bottom:56px}
+  .head h2{font-family:"Noto Serif JP",serif;font-weight:400;font-size:28px;letter-spacing:.2em;margin-top:8px}
+  .wrap{max-width:960px;margin:0 auto}
+
+  .profile-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;align-items:start}
+  .profile-grid dl{border-top:1px solid var(--line)}
+  .profile-grid dt{font-size:12px;letter-spacing:.15em;color:var(--gold);padding-top:20px}
+  .profile-grid dd{padding:4px 0 20px;border-bottom:1px solid var(--line)}
+  .profile-text p+p{margin-top:1.2em}
+
+  .live{background:var(--dark);color:var(--dark-ink);padding:0;display:grid;grid-template-columns:1.5fr 1fr}
+  .live img{width:100%;height:100%;object-fit:cover;min-height:420px}
+  .live .txt{padding:96px 6vw;display:flex;flex-direction:column;justify-content:center}
+  .live h2{font-family:"Noto Serif JP",serif;font-weight:400;font-size:28px;letter-spacing:.2em;margin:8px 0 28px}
+  .live p{color:#bdb5a8;font-size:15px}
+
+  .ens-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+  .ens-grid h3{font-family:"Noto Serif JP",serif;font-weight:600;font-size:22px;letter-spacing:.1em;margin-bottom:20px}
+  .links{list-style:none;border-top:1px solid var(--line)}
+  .links li{border-bottom:1px solid var(--line)}
+  .links a{display:flex;justify-content:space-between;align-items:center;padding:20px 4px;text-decoration:none}
+  .links a span:first-child{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.08em}
+  .links a span:last-child{font-size:13px;color:var(--sub)}
+  .links a:hover span:first-child{color:var(--gold)}
+
+  .contact{text-align:center;border-top:1px solid var(--line)}
+  .contact p{color:var(--sub)}
+  .contact a.btn{display:inline-block;margin-top:32px;padding:14px 40px;border:1px solid var(--ink);text-decoration:none;letter-spacing:.15em;font-size:14px}
+  .contact a.btn:hover{background:var(--ink);color:var(--bg)}
+
+  footer{padding:40px 8vw;text-align:center;font-size:12px;color:var(--sub);letter-spacing:.1em}
+
+  @media (max-width:820px){
+    header{padding:14px 16px}
+    nav a{margin-left:14px;font-size:12px}
+    .hero{grid-template-columns:1fr;min-height:auto}
+    .hero-img{height:72vh}
+    .hero-text{padding:48px 16px 24px}
+    section{padding:80px 16px}
+    .profile-grid,.ens-grid{grid-template-columns:1fr;gap:40px}
+    .live{grid-template-columns:1fr}
+    .live img{min-height:0;height:auto}
+    .live .txt{padding:56px 16px}
+  }
+  @media (max-width:420px){ nav a:nth-child(3){display:none} }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#top">らんギターアンサンブル</a>
+  <nav>
+    <a href="#ensemble">Ensemble</a>
+    <a href="#profile">Profile</a>
+    <a href="#live">Live</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-img" role="img" aria-label="クラシックギターを持つ秋山嵐之輔"></div>
+    <div class="hero-text">
+      <span class="en">Guitar Ensemble</span>
+      <h1>らん<br><span style="white-space:nowrap">ギターアンサンブル</span></h1>
+      <span class="roman">Ran Guitar Ensemble</span>
+      <div class="rule"></div>
+      <p class="lead">知っている曲を、ギターだけの合奏で。<br>主宰・編曲　秋山嵐之輔</p>
+    </div>
+  </div>
+
+  <section id="ensemble">
+    <div class="wrap">
+      <div class="head"><span class="en">Ensemble</span><h2>ギターアンサンブル</h2></div>
+      <div class="ens-grid">
+        <div>
+          <h3>らんギターアンサンブル</h3>
+          <p>アルト・プライム・バス・ギタロンなど、音域の違うギターを重ねる合奏をしています。</p>
+          <p style="margin-top:1.2em">SNSでは、パートが1つずつ重なっていく「曲当てクイズ」と、普通のギターで一緒に弾けるTAB譜を毎週公開しています。</p>
+        </div>
+        <ul class="links">
+          <li><a href="https://www.instagram.com/ran.guitar_ensemble/" target="_blank" rel="noopener"><span>Instagram</span><span>@ran.guitar_ensemble</span></a></li>
+          <li><a href="https://www.tiktok.com/@ran.guitar_ensemble" target="_blank" rel="noopener"><span>TikTok</span><span>@ran.guitar_ensemble</span></a></li>
+          <li><a href="https://www.youtube.com/@ran.guitar_ensemble" target="_blank" rel="noopener"><span>YouTube</span><span>@ran.guitar_ensemble</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile">
+    <div class="wrap">
+      <div class="head"><span class="en">Profile</span><h2>主宰　秋山嵐之輔</h2></div>
+      <div class="profile-grid">
+        <dl>
+          <dt>全日本ギターコンクール 独奏部門</dt>
+          <dd>2026年 第57回 第二位<br>2024年 第55回 努力賞<br>2022年 第三位</dd>
+          <dt>JGA ギター合奏コンクール（山梨県立北杜高等学校）</dt>
+          <dd>2017年・2018年 金賞・審査員特別賞<br>2019年 金賞（バンドマスター）</dd>
+          <dt>活動</dt><dd>らんギターアンサンブル 主宰・編曲</dd>
+        </dl>
+        <div class="profile-text">
+          <p>山梨県出身。中学3年でギターに出会う。山梨県立北杜高等学校でギター合奏に取り組み、JGA ギター合奏コンクールで3年連続金賞。</p>
+          <p>国際新堀芸術学院で学び、2024年にBグループのコンサートマスターを務める。2025年3月卒業。全日本ギターコンクール独奏部門で2026年に第二位。</p>
+          <p>現在は仲間とギターアンサンブル「らんギターアンサンブル」を主宰し、アニメソングやJ-POPの合奏用編曲と演奏を手がけています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="live" class="live">
+    <img src="img/live.jpg" alt="ライブで歌う秋山嵐之輔">
+    <div class="txt">
+      <span class="en">Live</span>
+      <h2>ライブ</h2>
+      <p>クラシックギターのほか、バンドのステージにも立っています。</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <span class="en">Contact</span>
+    <h2 style="font-family:'Noto Serif JP',serif;font-weight:400;font-size:28px;letter-spacing:.2em;margin:8px 0 24px">お問い合わせ</h2>
+    <p>演奏のご相談・ご連絡は、Instagram のメッセージからお願いします。</p>
+    <a class="btn" href="https://www.instagram.com/ran.guitar_ensemble/" target="_blank" rel="noopener">Instagram へ</a>
+  </section>
+</main>
+
+<footer>&copy; 2026 Rannosuke Akiyama</footer>
+</body>
+</html>

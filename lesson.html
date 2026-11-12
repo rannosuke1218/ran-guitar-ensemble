@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レッスン | 秋山嵐之輔</title>
+<meta name="description" content="ギタリスト秋山嵐之輔の公式サイト。クラシックギター、ギターアンサンブル「ランギターアンサンブル」の活動を紹介しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf8f4; --ink:#1f1d1a; --sub:#6b655c; --line:#d9d2c5; --gold:#a8894a;
+    --dark:#14120f; --dark-ink:#f1ece3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",sans-serif;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 32px;background:rgba(250,248,244,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+  .logo{font-family:"Noto Serif JP",serif;font-size:15px;letter-spacing:.2em;text-decoration:none}
+  nav a{font-size:13px;letter-spacing:.12em;text-decoration:none;color:var(--sub);margin-left:28px}
+  nav a:hover{color:var(--ink)}
+
+  .hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;padding-top:64px}
+  .hero-img{background:url(img/classical.jpg) center 30%/cover no-repeat}
+  .hero-text{display:flex;flex-direction:column;justify-content:center;padding:64px 8vw}
+  .en{font-family:"Cormorant Garamond",serif;letter-spacing:.3em;color:var(--gold);font-size:14px;text-transform:uppercase}
+  .hero h1{font-family:"Noto Serif JP",serif;font-weight:600;font-size:clamp(34px,4.4vw,56px);letter-spacing:.14em;line-height:1.4;margin:18px 0 6px}
+  .hero .roman{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.18em;color:var(--sub)}
+  .hero .rule{width:48px;height:1px;background:var(--gold);margin:36px 0}
+  .hero p.lead{color:var(--sub);font-size:15px}
+
+  section{padding:120px 8vw}
+  .head{margin-bottom:56px}
+  .head h2{font-family:"Noto Serif JP",serif;font-weight:400;font-size:28px;letter-spacing:.2em;margin-top:8px}
+  .wrap{max-width:960px;margin:0 auto}
+
+  .profile-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:72px;align-items:start}
+  .profile-grid dl{border-top:1px solid var(--line)}
+  .profile-grid dt{font-size:12px;letter-spacing:.15em;color:var(--gold);padding-top:20px}
+  .profile-grid dd{padding:4px 0 20px;border-bottom:1px solid var(--line)}
+  .profile-text p+p{margin-top:1.2em}
+
+  .live{background:var(--dark);color:var(--dark-ink);padding:0;display:grid;grid-template-columns:1.5fr 1fr}
+  .live img{width:100%;height:100%;object-fit:cover;min-height:420px}
+  .live .txt{padding:96px 6vw;display:flex;flex-direction:column;justify-content:center}
+  .live h2{font-family:"Noto Serif JP",serif;font-weight:400;font-size:28px;letter-spacing:.2em;margin:8px 0 28px}
+  .live p{color:#bdb5a8;font-size:15px}
+
+  .ens-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+  .ens-grid h3{font-family:"Noto Serif JP",serif;font-weight:600;font-size:22px;letter-spacing:.1em;margin-bottom:20px}
+  .links{list-style:none;border-top:1px solid var(--line)}
+  .links li{border-bottom:1px solid var(--line)}
+  .links a{display:flex;justify-content:space-between;align-items:center;padding:20px 4px;text-decoration:none}
+  .links a span:first-child{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.08em}
+  .links a span:last-child{font-size:13px;color:var(--sub)}
+  .links a:hover span:first-child{color:var(--gold)}
+
+  .contact{text-align:center;border-top:1px solid var(--line)}
+  .contact p{color:var(--sub)}
+  .contact a.btn{display:inline-block;margin-top:32px;padding:14px 40px;border:1px solid var(--ink);text-decoration:none;letter-spacing:.15em;font-size:14px}
+  .contact a.btn:hover{background:var(--ink);color:var(--bg)}
+
+  footer{padding:40px 8vw;text-align:center;font-size:12px;color:var(--sub);letter-spacing:.1em}
+
+  @media (max-width:820px){
+    header{padding:14px 16px}
+    nav a{margin-left:14px;font-size:12px}
+    .hero{grid-template-columns:1fr;min-height:auto}
+    .hero-img{height:72vh}
+    .hero-text{padding:48px 16px 24px}
+    section{padding:80px 16px}
+    .profile-grid,.ens-grid{grid-template-columns:1fr;gap:40px}
+    .live{grid-template-columns:1fr}
+    .live img{min-height:0;height:auto}
+    .live .txt{padding:56px 16px}
+  }
+  @media (max-width:420px){ nav a:nth-child(3){display:none} }
+</style>
+<meta name="robots" content="noindex,nofollow">
+<style>.draft{background:#f3ead7;color:#6b5320;text-align:center;font-size:13px;padding:10px 16px;margin-top:64px;letter-spacing:.08em}
+.price{border-top:1px solid var(--line)}.price div{display:flex;justify-content:space-between;padding:20px 4px;border-bottom:1px solid var(--line)}
+.price span:last-child{color:var(--sub)}</style>
+</head>
+<body>
+<header><a class="logo" href="index.html">らんギターアンサンブル</a><nav><a href="index.html#profile">Profile</a><a href="index.html#ensemble">Ensemble</a><a href="lesson.html">Lesson</a></nav></header>
+<div class="draft">下書き（非公開）: 独立したら中身を埋めてトップからリンクします</div>
+<main>
+<section><div class="wrap">
+<div class="head"><span class="en">Lesson</span><h2>ギターレッスン</h2></div>
+<div class="profile-grid">
+<dl><dt>対象</dt><dd>クラシックギター・エレキギター／初心者から</dd><dt>場所</dt><dd>（未定）</dd><dt>形式</dt><dd>個人レッスン（オンラインは未定）</dd></dl>
+<div class="price"><div><span>体験レッスン</span><span>（料金未定）</span></div><div><span>通常レッスン</span><span>（料金未定）</span></div><div><span>月謝</span><span>（料金未定）</span></div></div>
+</div></div></section>
+<section style="border-top:1px solid var(--line)"><div class="wrap">
+<div class="head"><span class="en">Performance</span><h2>演奏のご依頼</h2></div>
+<p>イベント・結婚式・施設などでの演奏（ソロ／アンサンブル）。内容と料金は（未定）。</p>
+</div></section>
+<section id="contact" class="contact"><span class="en">Contact</span>
+<h2 style="font-family:'Noto Serif JP',serif;font-weight:400;font-size:28px;letter-spacing:.2em;margin:8px 0 24px">お問い合わせ</h2>
+<p>（問い合わせフォームは独立時に用意）</p></section>
+</main>
+<footer>&copy; 2026 Rannosuke Akiyama</footer>
+</body></html>
